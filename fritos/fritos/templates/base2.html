@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Tienda {% endblock %}</title>
+    <link rel="stylesheet" href="{{ STATIC_URL }}fritos/css/base.css"/>
+    <link rel="stylesheet" href="{{ STATIC_URL }}fritos/css/jquery-ui.css"/>
+    <script src="{{ STATIC_URL }}fritos/js/jquery-1.11.1.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}fritos/js/jquery.form.js" type="text/javascript"></script>
+    <script src="{{ STATIC_URL }}fritos/js/jquery-ui.js" type="text/javascript"></script>
+    {% block script %}{% endblock %}
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <div id="sheet">
+        <section id="bar">
+            <ul>
+                <li class="item1" id="add"><a href="#"></a></li>
+                <li class="item2"><a href="#"></a></li>
+                <li class="item3"><a href="#"></a></li>
+                <li class="item4"><a href="#"></a></li>
+           </ul>
+        </section>
+        <section id="main">
+            <header>
+                <div id="session"><i></i></div>
+            </header>
+            <section id="content">
+                 {%block content%}{%endblock%}
+            </section>
+            <footer>
+                {%block footer%}{%endblock%}
+            </footer>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<form action="/venta/crear/do/" method="post">
+	{%csrf_token%}
+	<input type="text" name="numero" />
+	<input type="submit" value="Enviar" />
+</form>
+
+
+<form action="/venta/agregar/producto/" method="post">
+	{%csrf_token%}
+	<input type="text" name="producto" placeholder="producto"/>
+	<input type="text" name="venta" placeholder="venta"/>
+	<input type="text" name="cantidad" placeholder="cantidad"/>
+	<input type="submit" value="Enviar" />
+</form>
+
+<form action="/venta/confirmar/" method="post">
+	{%csrf_token%}
+	<input type="text" name="venta" />
+	<input type="submit" value="Enviar" />
+</form>
+
+<form action="/venta/mostrar/" method="post">
+	{%csrf_token%}
+	<input type="text" name="venta" />
+	<input type="submit" value="Enviar" />
+</form>
